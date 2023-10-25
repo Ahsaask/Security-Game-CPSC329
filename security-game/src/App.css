@@ -1,0 +1,135 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background-image: url('https://source.unsplash.com/1600x900/?gaming');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(28, 28, 40, 0.85);
+  backdrop-filter: blur(10px);
+}
+.main-box {
+  background-color: rgba(24, 23, 23, 0.6); 
+  border-radius: 10px;
+  padding: 40px;
+  width: 70%;
+  box-shadow: 0px 0px 15px rgba(29, 24, 24, 0.2);
+  backdrop-filter: blur(10px); 
+}
+
+
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.url-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  margin-right: 20px;
+  color: #282c34;
+}
+
+.check-btn, .answer {
+  background-color: #61dafb;
+  border: none;
+  color: #282c34;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+ 
+}
+.check-btn{
+  margin: 10px;
+}
+
+.check-btn:hover, .answer:hover {
+  background-color: #e1f070;
+}
+
+.question {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.answer {
+  background-color: #61dafb;
+  border: none;
+  color: #282c34;
+  padding: 10px 20px;
+  margin: 10px 5px; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.result-box {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(24, 23, 23, 0.7);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.result-score {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #61dafb; 
+}
+
+.result-likelihood {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.emoji {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.sticker {
+  position: fixed;
+  top: 65%;
+  right: 5%;
+  font-size: 2em;
+  background-color: rgba(24, 23, 23, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  backdrop-filter: blur(10px);
+  transform: scale(1);
+  transition: all 1s;
+}
+
+
+@keyframes fadeOut {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.2); }
+}
+
+
+.sticker.show {
+  animation: fadeOut 1s forwards;
+  opacity: 1;
+}
