@@ -13,28 +13,28 @@ const questions = [
     correct: 1
   },
   {
-    question: "Should you share your password?",
+    question: "Should you share your password online?",
     answers: ["Yes", "No"],
     correct: 1
   },
   {
     question: "What is phishing?",
-    answers: ["A hobby", "Online scam"],
+    answers: ["A hobby", "Online scam", "Fishing, incorrectly spelled"],
     correct: 1
   },
   {
     question: "Is public Wi-Fi always safe?",
-    answers: ["Yes", "No"],
+    answers: ["Yes", "No", "Maybe"],
     correct: 1
   },
   {
     question: "Which one is a strong password?",
-    answers: ["123456", "jK8!2#tQ1*"],
+    answers: ["123456", "jK8!2#tQ1*","strong"],
     correct: 1
   },
   {
     question: "What should you do if your account gets hacked?",
-    answers: ["Ignore it", "Change your password"],
+    answers: ["Ignore it", "Change your password", "Hack someone else's account"],
     correct: 1
   },
   {
@@ -44,12 +44,12 @@ const questions = [
   },
   {
     question: "What is 2-factor authentication?",
-    answers: ["A dance move", "An extra layer of security"],
+    answers: ["A dance move", "An extra layer of security", "A math equation"],
     correct: 1
   },
   {
     question: "Is it safe to download files from unknown emails?",
-    answers: ["Yes", "No"],
+    answers: ["Yes", "No",],
     correct: 1
   },
 ];
