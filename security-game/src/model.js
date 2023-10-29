@@ -14,10 +14,10 @@ const Model = () => {
     });
   
     scene.scale.set(3.5, 3.5, 3.5);
-    scene.position.set(-3, -1, 1);  // Moved model to the left
+    scene.position.set(-3, -1, 1);  
   
     useFrame(({ clock }) => {
-      scene.rotation.y = clock.elapsedTime * 0.5; // Rotation around the horizontal axis
+      scene.rotation.y = clock.elapsedTime * 0.5; 
     });
   
     return <primitive object={scene} />;
