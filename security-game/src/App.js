@@ -28,7 +28,7 @@ function App() {
       </div>
       <Canvas style={{ background: '#1E1E1E' }} shadows> 
         <ambientLight />
-        <PerspectiveCamera makeDefault position={[4.5, 1.5, -0.5]} />
+        <PerspectiveCamera makeDefault position={[8.5, 3.5, -0.5]} />
         <OrbitControls />
         <Model />
       </Canvas>

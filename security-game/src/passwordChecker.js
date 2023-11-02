@@ -9,15 +9,17 @@ const PasswordChecker = () => {
   const strengthEmoji = {
     'Very Weak': '🚫',
     'Weak': '🤔',
-    'Good': '👍'
+    'Good': '👍',
+    'Very Good':'💯',
   };
 
   const evaluatePassword = (pwd) => {
     let strength = '';
     let tips = [];
 
-
-    if (pwd.length >= 8) {
+    if (pwd.length >= 12){
+      strength = 'Very Good';
+    } else if (pwd.length >= 8) {
       strength = 'Good';
     } else {
       strength = 'Weak';
@@ -30,8 +32,12 @@ const PasswordChecker = () => {
     if (!/[0-9]/.test(pwd)) tips.push('Include at least one number.');
     if (!/[\W_]/.test(pwd)) tips.push('Include at least one symbol.');
 
-    // Common password- To @shaim, if you can add more common passwords from the course.
-    if (['password123', '123456', 'qwerty'].includes(pwd)) {
+    // Expanded list of common passwords
+    const commonPasswords = [
+      'password123', '123456', 'qwerty', 'letmein', 'password1', 
+      'admin', 'welcome', 'sunshine', 'iloveyou', 'monkey'
+    ];
+    if (commonPasswords.includes(pwd)) {
       strength = 'Very Weak';
       tips.push('This is a commonly used password. Please choose another one.');
     }
@@ -49,7 +55,7 @@ const PasswordChecker = () => {
   return (
     <div className="password-container">
       <h2 className="password-heading">Password Game Time! 🎮</h2>
-      <p className="password-desc">How ninja is your password? Let's find out! 🥷</p>
+      {/* <p className="password-desc">How ninja is your password? Let's find out! 🥷</p> */}
       <input
         className="password-input"
         type="text"
@@ -59,7 +65,7 @@ const PasswordChecker = () => {
       />
       <p className="password-feedback">
         <span className="emoji">{strengthEmoji[strength]}</span> 
-        Password Strength: {strength}
+         {strength}
       </p>
       <ul className="feedback-tips">
         {tips.map((tip, index) => (
