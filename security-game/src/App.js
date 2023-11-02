@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
-import Model from './model';
+import Model from './model.js';
 import Quiz from './quiz';
 
 import PasswordChecker from './passwordChecker';
