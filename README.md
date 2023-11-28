@@ -20,3 +20,7 @@ npm install react-three-fiber @react-three/drei
 ```
 npm start
 ```
+
+## Application Preview
+![Cpsc329-demo](https://github.com/Ahsaask/Security-Game-CPSC329/assets/109789003/89909563-271f-4d1e-8572-ffe5c4729715)
+
