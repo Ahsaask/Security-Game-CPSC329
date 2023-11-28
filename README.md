@@ -9,7 +9,7 @@ This interactive game is designed to enhance seniors' knowledge about security a
 
 ## Installation
 Clone the repository and install dependencies:
-
+```bash
 git clone https://github.com/<your-username>/security-game.git
 cd security-game
 npm install
