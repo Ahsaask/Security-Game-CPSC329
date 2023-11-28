@@ -2,16 +2,16 @@
 import React, { useState } from 'react';
 
 const questions = [
-    {
-      question: "What's the most common password?",
-      answers: ["password123", "uniquecode"],
-      correct: 0
-    },
-    {
-      question: "Which protocol is secure?",
-      answers: ["HTTP", "HTTPS"],
-      correct: 1
-    },
+  {
+    question: "Which protocol is secure?",
+    answers: ["HTTP", "HTTPS"],
+    correct: 1
+  },
+  {
+    question: "Using same password for all accounts?",
+    answers: ["Yes, it's safe", "No, it increases risk"],
+    correct: 1
+  },
     {
       question: "Should you share your password?",
       answers: ["Yes", "No"],
