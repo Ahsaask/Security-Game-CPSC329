@@ -14,8 +14,9 @@ git clone https://github.com/<your-username>/security-game.git
 cd security-game
 npm install
 npm install react-three-fiber @react-three/drei
+```
 
 ## Running the Application
+```
 npm start
-
-
+```
