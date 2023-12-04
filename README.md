@@ -10,8 +10,6 @@ This interactive game is designed to enhance seniors' knowledge about security a
 ## Installation
 Clone the repository and install dependencies:
 ```bash
-mkdir SecurityGameDemo
-cd SecurityGameDemo
 git clone https://github.com/Ahsaask/Security-Game-CPSC329.git
 cd Security-Game-CPSC329/security-game
 npm install
