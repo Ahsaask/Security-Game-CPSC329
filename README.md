@@ -10,10 +10,13 @@ This interactive game is designed to enhance seniors' knowledge about security a
 ## Installation
 Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/<your-username>/security-game.git
-cd security-game
+mkdir SecurityGameDemo
+cd SecurityGameDemo
+git clone https://github.com/Ahsaask/Security-Game-CPSC329.git
+cd Security-Game-CPSC329/security-game
 npm install
 npm install react-three-fiber @react-three/drei
+npm start
 ```
 
 ## Running the Application
